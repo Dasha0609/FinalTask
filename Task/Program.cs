@@ -23,4 +23,15 @@ for (int i = 0; i < arr1.Length; i++){
     }  
 }
 Console.WriteLine();
-Console.Write("Final array is: ");
+Console.Write("Final array is: [");
+
+string[] arr2 = new string[count];
+int j = 0;
+for (int i = 0; i < arr1.Length; i++){
+   if(arr1[i].Length <= SymQty){
+      arr2[j] = arr1[i];
+        Console.Write(arr2[j] + ",");
+        j++;
+    }
+}
+Console.Write("]");
